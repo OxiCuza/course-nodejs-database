@@ -14,3 +14,13 @@ model Sample {
   id String @id
   name String
 }
+
+model Customer {
+  id Int @id
+  name String
+  gender String?
+  email String @unique
+  phone String @unique
+
+  @@map("customers")
+}
